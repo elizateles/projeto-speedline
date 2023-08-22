@@ -1,0 +1,158 @@
+
+.planos {
+    background-color: var(--cinza-claro);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.planos__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.planos__cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoomIn 3s ease forwards, floatImage 3s ease-in-out infinite;
+    animation-delay: 1s;
+
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px #00000010;
+}
+
+.cartao:hover {
+    box-shadow: 0 0 30px #FF4500;
+    
+}
+
+
+
+.cartao__titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .75rem 0;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid var(--azul-claro);
+}
+
+.cartao__conteudo {
+    padding: 01 15%;
+}
+
+.cartao__preco {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.cartao__texto {
+    color: var(--fonte-cinza);
+    line-height: 28px;
+    text-align: center;
+}
+
+.cartao__botao {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    align-self: center;
+    padding: .75rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cartao--start {
+    color: green;
+}
+
+
+.cartao--ultra {
+    color: var(--planos-cartao-ultra);
+}
+
+.cartao--mega {
+    color: var(--planos-cartao-mega);
+}
+
+
+.cartao__botao--ultra {
+    border-color: var(--planos-cartao-ultra);
+}
+
+.cartao__botao--mega {
+    border-color: var(--planos-cartao-mega);
+}
+
+footer {
+	text-align: center;
+	background: #FF4500;
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #1e1c2a;
+	font-size: 18px;
+	margin: 20px 0 0;
+}
+
+.contato-item {
+   
+    font-size: var(--cinza-claro);
+    color: #1e1c2a;
+    text-align: left;
+    margin-left: 5%;
+    padding: 0.5%;
+    font-size: 18px;
+
+}
+
+.item {
+    color: black;
+    margin-left: 10px;
+
+}
+
+.item:hover {
+
+    box-shadow: 0 0 30px rgba(219, 7, 42, 0.952);
+    
+}
+
+.contato {
+    color: #1e1c2a;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 2%;
+
+}
+
+
+@media screen and (min-width: 980px) {
+    .planos__cartoes {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}    
+
